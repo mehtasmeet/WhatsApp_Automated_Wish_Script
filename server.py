@@ -29,7 +29,8 @@ def send_message(name):
     user.click()
     msg_box = browser.find_element_by_xpath('/html/body/div[1]/div[1]/div[1]/div[4]/div[1]/footer/div[1]/div/div/div[2]/div[1]/div/div[2]')
     msg_box.click()
-    pyautogui.write('Hey {},\n Quote \n #QOTD'.format(name.split()[0]))
+    #Enter your message in the area
+    pyautogui.write('Hey {},\n Enter Your message'.format(name.split()[0]))
     button = browser.find_element_by_xpath('//span[@data-icon="send"]')
     button.click()
 
